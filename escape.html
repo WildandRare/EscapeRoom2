@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet">
+        <script src="digithelp.js"></script>
+    </head>
+    <body>
+        <div infull style="display: none;">
+        <button opt onclick="requestHELP(1)" style="z-index: 9; position: fixed; right: 0; bottom:0; font-size: small; display: none;" id="help" >Ask Sean for help on of the digits of the passcode.</button>
+        <div id="ex">
+
+        </div>
+        <div top style="width: 100%; height: 70%; top: 0; left: 0; position: fixed; background-color: rgb(92, 92, 92);">
+
+            <div details style="width: 65%; height: 20%; position: absolute; right: 0vw; top:0; background-color: white; display: grid; grid-template-columns: auto auto;">
+                <div detailhalf>
+                    <div>
+                        Murder Location: <input detinput mrdrlctn>
+                    </div>
+                </div>
+                <div detailhalf>
+                    <div style="display: grid; grid-template-columns: auto; position: relative; left: 0.53vw;">
+                        <div>
+                            Murderer: <input detinput m>
+                        </div>
+                        
+                        <div>
+                            Accomplice: <input detinput a>
+                        </div>
+
+                        <div>
+                            Victim: <input detinput v>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+            <div style="width: 35%; height: 100%; background-color: rgb(90, 90, 90); position: relative; left: 0; z-index: 1;" lock>
+                <input style="background-color: rgb(235, 235, 235); width: 100%; position: relative; box-sizing: border-box; top:0; border-width: 0.43vw;" id="pass" value="" readonly type="number">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div style="display: grid; grid-template-columns: auto auto auto; justify-content: center; justify-items: center; width: 100%; position: absolute; left: 0vw; column-gap: 0.3vw; row-gap: 0.3vw;">
+                        <div numb onclick="add(1)">
+                           1
+                        </div>
+                        <div numb onclick="add(2)">
+                            2
+                        </div>
+                        <div numb onclick="add(3)">
+                            3
+                        </div>
+                        <div numb onclick="add(4)"> 
+                            4
+                        </div>
+                        <div numb onclick="add(5)">
+                            5
+                        </div>
+                        <div numb onclick="add(6)">
+                            6
+                        </div>
+                        <div numb onclick="add(7)">
+                            7
+                        </div>
+                        <div numb onclick="add(8)">
+                            8
+                        </div>
+                        <div numb onclick="add(9)">
+                            9
+                        </div>
+                        <div numb onclick="add(0)">
+                            0
+                        </div>
+                        <div numb style="background-color: greenyellow;" onclick="go()">
+                            GO
+                        </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div style="width: 65%; height: 80%; position: absolute; bottom: 0; right: 0; background-color: white; display: grid;" digits>
+                <div digit>
+                    DIGIT 1
+                    <br>
+                    <br>
+                    <span style="font-size:small;">
+                        The phyla you got when Takira and Keely were dusting for prints is the largest phyla of invertebrates.
+                    </span>
+                    <br>
+                    <br>
+                    TRUE - 1
+                    <BR>
+                    FALSE - 2
+                </div>
+
+                <div digit>
+                    DIGIT 2
+                    <br>
+                    <br>
+                    <span style="font-size:small;">
+                        Earthworms are a part of which phyla?
+                    </span>
+                    <br>
+                    <br>
+                    CHORDATA - 2
+                    <BR>
+                    PLATYHELMINTHES - 4
+                    <br>
+                    NEMATODA - 6
+                    <br>
+                    ANNELIDA - 8
+                </div>
+
+                <div digit>
+                    DIGIT 3
+                    <br>
+                    <br>
+                    <span style="font-size:small;">
+                        What is the secret word?
+                    </span>
+                    <br>
+                    <br>
+                    PLATYHELMINTHES - 1
+                    <BR>
+                    CNIDARIA - 3
+                    <br>
+                    ECHINODERMATA - 5
+                    <br>
+                    ARTHROPODA - 7
+                </div>
+
+                <div digit>
+                    DIGIT 4
+                    <br>
+                    <br>
+                    <span style="font-size:small;">
+                        The <span style="color: red;">length</span> of Declan's phone password <span style="color: red;">divided</span> by the <span style="color: red;">amount</span> of suspects.
+                        <br>
+                        <br>
+                        Then <span style="color: red;">add 4</span>.
+                    </span>
+                </div>
+
+                <div digit>
+                    DIGIT 5
+                    <br>
+                    <span style="font-size:smaller;">
+                        The weapond used (KNIFE - 1, HOOK - 2, PENCIL - 3) <span style="color: red;">plus</span> <br> The location of the murder (SCHOOL - 1, DECLAN'S HOUSE - 2, MR. ROTH'S HOUSE - 3, THE SWIMMING POOL - 4) <span style="color: red;">plus</span> <br>DECLAN'S FAVORITE FOOD (PIZZA - 1, SPAGHETTI - 2, MUSSELS - 3, CLAMS - 4)
+                    </span>
+                    
+                </div>
+
+                <div digit>
+                    DIGIT 6
+                    <br>
+                    <span style="font-size:smaller;">
+                        The Secret Number * 5 <span style="color: red;">minus</span> <br> WHO FOUND THE BODY (ETHAN - 1, PENN - 2, TAKIRA - 3, MRS. LEASURE - 4) <span style="color: red;">minus</span> <br> A BRITTLE STAR IS A PART OF THE PHYLA (CTENOPHORA - 1, ECHINODERMATA - 2, CNIDARIA - 3, MOLLUSCA - 4)
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        <div vid style="background-color: black; width: 100%; height: 100%; position: fixed; left: 0; top: 0;">
+            <img src="doorview0001-0128 (1).gif" style="width: 100%; position: fixed; top: 10%;" offvid>
+        </div>
+        <div vidend>
+            
+        </div>
+        <style>
+            [top]{
+                border-color: black;
+                border-width: 0.63vw;
+                border-radius: 0.3vw;
+                border-style: solid;
+                box-sizing: border-box;
+            }
+            [lock]{
+                border-right-color: black;
+                border-right-width: 0.63vw;
+                border-right-style: solid;
+            }
+            [details]{
+                border-bottom-color: black;
+                border-bottom-width: 0.63vw;
+                border-bottom-style: solid; 
+            }
+            [digits]{
+                border-color: black;
+                border-width: 0.63vw;
+                border-style: solid;
+                box-sizing: border-box;
+                grid-template-columns: auto auto;
+            }
+            [digit]{
+                width: 100%;
+                height: 100%;
+                border-color: black;
+                border-width: 0.3vw;
+                border-style: solid;
+            }
+            [numb]{
+                text-align: center;
+                background-color: rgb(0, 170, 9);
+                border-color: black;
+                border-width: 0.3vw;
+                border-style: solid;
+                height: 6.3vw;
+                width: 9vw;
+                font-size: x-large;
+                display: table-cell;
+                vertical-align: middle;
+                line-height: 6.3vw;
+            }
+            [detailhalf]{
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);
+                border-color: black;
+                border-width: 0.3vw;
+                border-style: solid;
+                box-sizing: border-box;
+            }
+            [detinput]{
+                width: 19.3vw;
+                height: 1.3vw;
+                position: relative;
+                background-color: white;
+                border-width: 0.43vw;
+                border-radius: 0.3vw;
+                font-size: medium;
+                top: 0;
+            }
+            [detailhalf] div div{
+                margin: 0.33vw;
+            }
+        </style>
+        <script>
+            var code = "";
+            function add(numb){
+                document.getElementById("pass").value += numb;
+                code+=numb;
+                var aud = new Audio('sound/blipSelect.wav');
+                aud.play()
+            }
+            window.addEventListener("load", function(){
+
+                setTimeout(function(){
+                    document.querySelector("[vid]").style.display = "none";
+                    document.querySelector("[infull]").style.display = "block";
+                    document.getElementById("ex").style.bottom = "0vw";
+                    document.getElementById("ex").innerHTML = "Finally. We've reached the exit doors of the hospital. But before we solve the code and get out of this place. Let's solve the murder details <b>(at the top right corner of the page)</b>.";
+
+                    setTimeout(function(){
+                        document.getElementById("ex").innerHTML = "You know what, I'll fill out the murder details (at the top right hand corner of the page) , and you can solve the code. So just watch me (at the top right hand corner of the page) for now until I say I'm done.";
+
+                        setTimeout(function(){
+                            document.getElementById("ex").innerHTML = "I'll start with the murder location. The murder happened at school, so I'll put that in.";
+                            document.querySelector("[mrdrlctn]").value = "School";
+
+                            setTimeout(function(){
+                                document.getElementById("ex").innerHTML = "The killer, is Mr. Roth. The accomplice is Casey, and the victim is Declan.";
+                                setTimeout(function(){
+                                    document.querySelector("[m]").value = "Mr. Roth";
+                                }, 1000)
+                                setTimeout(function(){
+                                    document.querySelector("[a]").value = "Casey";
+                                }, 2000)
+                                setTimeout(function(){
+                                    document.querySelector("[v]").value = "Declan";
+                                }, 3000)
+                                setTimeout(function(){
+                                    document.getElementById("ex").innerHTML = "Now you can solve the code."; 
+                                    document.getElementById("help").style.display = "block";
+                                    setTimeout(function(){
+                                        document.getElementById("ex").style.bottom = "-33.3vw";
+                                    }, 2000) 
+                                }, 6000)
+                            }, 6000)
+
+                        }, 6000)
+
+                    }, 8500)
+
+                }, 5333.3333)
+
+            }) 
+            function requestHELP_II(digit){
+                document.getElementById("ex").innerHTML = S_HELP[digit];
+            }
+            function requestHELP(){
+                document.getElementById("ex").style.bottom = "0vw";
+                document.getElementById("ex").innerHTML = `What digit are you on? 
+                <button opt onclick='requestHELP_II(1)'>DIGIT 1</button>
+                <button opt onclick='requestHELP_II(2)'>DIGIT 2</button>
+                <button opt onclick='requestHELP_II(3)'>DIGIT 3</button>
+                <button opt onclick='requestHELP_II(4)'>DIGIT 4</button>
+                <button opt onclick='requestHELP_II(5)'>DIGIT 5</button>
+                <button opt onclick='requestHELP_II(6)'>DIGIT 6</button>`;
+            }
+            var pass = document.getElementById("pass").value;
+            function go(){
+                if(code=="181573"){
+                    document.querySelector("[vidend]").innerHTML = `<div vid2 style="background-color: black; width: 100%; height: 100%; position: fixed; left: 0; top: 0;">
+                <img src="dooropen0001-0128.gif" style="width: 100%; position: fixed; top: 10%;" offvid2>
+                </div>`;
+                document.getElementById("ex").style.bottom = "0vw";
+                document.getElementById("ex").innerHTML = "The doors... they're open! We can leave this place!";
+                document.getElementById("help").style.display = "none";
+                document.getElementById("ex").style.backgroundColor = "rgba(132, 132, 132, 0.86)";
+                document.getElementById("ex").style.color = "white";
+                setTimeout(function(){
+                    window.location.href = "escaped.html";
+                }, 5333.3333)
+                } else {
+                    document.getElementById("ex").style.bottom = "0vw";
+                    document.getElementById("ex").innerHTML = "You got it wrong ): Maybe check one or some of the digits.";
+                    document.getElementById("pass").value = "";
+                    code = "";
+                }
+            } 
+        </script>
+    </body>
+</html>
